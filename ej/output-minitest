@@ -1,0 +1,13 @@
+Run options: --seed 51289
+
+# Running:
+
+F
+
+Finished in 0.001684s, 593.8137 runs/s, 593.8137 assertions/s.
+
+  1) Failure:
+MyTest#test_fail [ej-minitest.rb:13]:
+Assertion was false.
+
+1 runs, 1 assertions, 1 failures, 0 errors, 0 skips
