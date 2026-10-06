@@ -1,11 +1,11 @@
-task :default => :tu
+task :default => :minitest
 
 desc "Pruebas unitarias Figuras Geometricas"
-task :tu do
-  sh "ruby -I. test/tc_figuras.rb"
+task :minitest do
+  sh "ruby -I. test/figuras_test.rb"
 end
 
-desc "Ejecutar solo las pruebas simples"
+desc "Ejecutar solo las pruebas que concuerdan con la expresión regular"
 task :simple do
-  sh "ruby -I. test/tc_figuras.rb -n /simple/"
+  sh "ruby -I. test/figuras_test.rb -n /simple/"
 end
