@@ -1,0 +1,11 @@
+task :default => :minitest
+
+desc "Pruebas unitarias Figuras Geometricas"
+task :minitest do
+  sh "ruby -I. test/figuras_test.rb"
+end
+
+desc "Ejecutar solo las pruebas que tienen simple en el nombre"
+task :simple do
+  sh "ruby -I. test/figuras_test.rb -n /simple/"
+end
